@@ -1,0 +1,18 @@
+.card-container:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-container {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-container:hover {
+    transform: scale(1.05);
+  }
+
+  .mx-auto{
+    /* margin: 15px; */
+    text-align: center;
+    padding: 15px;
+  }

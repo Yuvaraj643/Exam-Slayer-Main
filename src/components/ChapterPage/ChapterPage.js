@@ -25,7 +25,7 @@ const ChapterPage = () => {
         <div class="card mb-3">
           <div class="card-body">
             <h5 class="card-title">{chapter.name}</h5>
-            <a href={chapter.description} target="_blank">
+            <a href={chapter.description} target="_blank" rel="noreferrer">
             <button class="btn btn-primary">Download</button></a>
           </div>
         </div>

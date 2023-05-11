@@ -1,34 +1,7 @@
-// import React from 'react';
-
-// const Homepage = () => {
-//   return (
-//     <div className="container">
-//       <div className="row">
-//         <div className="col-lg-6">
-//           <div className="homepage-content">
-//             <h2>About ExamSlayer</h2>
-//             <p>ExamSlayer is an online platform that provides comprehensive study materials for various exams. We aim to help students achieve their academic goals by offering high-quality resources and personalized learning experiences.</p>
-//             <div className="mt-4">
-//               <button className="btn btn-primary mr-3">Explore All Departments</button>
-//               <button className="btn btn-secondary">Learn More</button>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="col-lg-6">
-//           <div className="homepage-image">
-//             <img src="/path/to/image.jpg" alt="Books Studying" className="img-fluid" />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Homepage;
-
+import React from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import "./style.css"
 function HomePage() {
   return (
     <div className="container-fluid">
@@ -54,7 +27,7 @@ function HomePage() {
             <div className="d-grid gap-2 col-6 mx-auto">
               <Link to="./departments">
                 <Button variant="primary" size="lg">
-                  Explore Study Materials
+                  Explore 
                 </Button>
               </Link>
               <Link to="./">

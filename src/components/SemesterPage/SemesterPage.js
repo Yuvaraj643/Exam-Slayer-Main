@@ -15,24 +15,30 @@ const SemesterPage = () => {
   // }, []);
   useEffect(() => {
     axios
-      .get(`https://exam-slayer.onrender.com/departments/${departmentId}/semesters`)
+      .get(
+        `https://exam-slayer.onrender.com/departments/${departmentId}/semesters`
+      )
       .then((response) => {
         setSemesters(response.data);
       });
   }, [departmentId]);
 
   return (
-    <div>
-      <h1>Semesters</h1>
-      <ul>
-        {semesters.map((semester) => (
-          <li key={semester.id}>
-            <a href={`/departments/${departmentId}/semesters/${semester.id}/subjects`}>
-              {semester.name}
-            </a>
-          </li>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        {departments.map((department) => (
+          <div class="col" key={department.id}>
+            <div class="card">
+              {/* <img src="..." class="card-img-top" alt="..." /> */}
+              <div class="card-body">
+                <Link to={`/departments/${department.id}/semesters`}>
+                  <h5 class="card-title">{department.name}</h5>
+                </Link>
+              </div>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

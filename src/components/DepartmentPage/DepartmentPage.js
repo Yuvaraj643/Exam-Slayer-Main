@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { Card, ListGroup } from 'react-bootstrap';
-import './style.css'
+import "./style.css"
 const DepartmentPage = () => {
   const [departments, setDepartments] = useState([]);
 
@@ -18,20 +17,24 @@ const DepartmentPage = () => {
   }, []);
 
   return (
-    <Card className="mx-auto card-container" style={{ maxWidth: '600px' }}>
-      <Card.Header>
-        <h1 className="text-center">Departments</h1>
-      </Card.Header>
-      <ListGroup variant="flush">
-        {departments.map((department) => (
-          <ListGroup.Item key={department.id}>
-            <Link to={`/departments/${department.id}/semesters`}>
-              {department.name}
-            </Link>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-    </Card>
+
+    <>
+      <h2 className="text-center mb-4">Explore All Departments</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          {departments.map((department) => (
+            <div class="card" key={department.id}>
+              {/* <img src="..." class="card-img-top" alt="..." /> */}
+              <div class="card-body">
+                <Link to={`/departments/${department.id}/semesters`}>
+                  <h5 class="card-title">{department.name}</h5>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

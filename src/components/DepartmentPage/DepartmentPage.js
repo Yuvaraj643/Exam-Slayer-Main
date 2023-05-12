@@ -24,7 +24,7 @@ const DepartmentPage = () => {
         <div class="col">
           {departments.map((department) => (
             <div class="card" key={department.id}>
-              {/* <img src="..." class="card-img-top" alt="..." /> */}
+              <img src={department.logo} class="card-img-top" alt="image" />
               <div class="card-body">
                 <Link to={`/departments/${department.id}/semesters`}>
                   <h5 class="card-title">{department.name}</h5>

@@ -25,19 +25,19 @@ const SemesterPage = () => {
       <div class="row row-cols-1 row-cols-md-4 g-4">
         {semesters.map((semester) => (
           <div class="col">
-            <div class="card text-dark bg-light mb-3">
-              <img src={semester.logo} class="card-img-top" alt="logo" />
-              <div class="card-body">
-                <Link
-                  to={`/departments/${departmentId}/semesters/${semester.id}/subjects`}
-                >
+            <Link
+              to={`/departments/${departmentId}/semesters/${semester.id}/subjects`}
+            >
+              <div class="card text-dark bg-light mb-3">
+                <img src={semester.logo} class="card-img-top" alt="logo" />
+                <div class="card-body">
                   <h5 class="card-title text-center">{semester.name}</h5>
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         ))}
-      </div>  
+      </div>
     </>
   );
 };

@@ -11,11 +11,11 @@ import Loader from "./components/Loader/Loader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const [dataFetched, setDataFetched] = useState(false);
+  // const [dataFetched, setDataFetched] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setDataFetched(true);
+      // setDataFetched(true);
       setLoading(false);
     }, 2000);
   }, []);

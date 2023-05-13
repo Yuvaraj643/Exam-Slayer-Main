@@ -5,3 +5,22 @@
 .img-fluid{
     border-radius: 6%;
 }
+
+.card{
+    margin: 0 auto;
+    max-width: 18rem;
+    text-decoration: none;
+  }
+
+  p{
+    margin-top: 15px;
+  }
+  #container{
+    margin: 0 auto;
+  }
+
+  .card-title{
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+  }

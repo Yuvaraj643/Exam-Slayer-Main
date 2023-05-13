@@ -26,7 +26,7 @@ const SemesterPage = () => {
         {semesters.map((semester) => (
           <div class="col">
             <div class="card text-dark bg-light mb-3">
-              <img src={semester.logo} class="card-img-top" alt="image" />
+              <img src={semester.logo} class="card-img-top" alt="logo" />
               <div class="card-body">
                 <Link
                   to={`/departments/${departmentId}/semesters/${semester.id}/subjects`}

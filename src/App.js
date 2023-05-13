@@ -34,7 +34,6 @@ const App = () => {
               element={
                 <SemesterPage
                   setLoading={setLoading}
-                  setDataFetched={setDataFetched}
                 />
               }
             />
@@ -43,7 +42,6 @@ const App = () => {
               element={
                 <SubjectPage
                   setLoading={setLoading}
-                  setDataFetched={setDataFetched}
                 />
               }
             />
@@ -52,7 +50,6 @@ const App = () => {
               element={
                 <ChapterPage
                   setLoading={setLoading}
-                  setDataFetched={setDataFetched}
                 />
               }
             />

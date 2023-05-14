@@ -1,6 +1,9 @@
 .homepage-image{
     margin-top: 5%;
 }
+.row{
+  width: 100%;
+}
 
 .img-fluid{
     border-radius: 6%;

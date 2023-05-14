@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./style.css";
+import Footer from "../Footer/Footer";
 function HomePage() {
   const [departments, setDepartments] = useState([]);
 
@@ -17,6 +18,7 @@ function HomePage() {
         console.log(error);
       });
   }, []);
+
   return (
     <>
       <div className="container-fluid">
@@ -77,6 +79,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+            <Footer />
     </>
   );
 }

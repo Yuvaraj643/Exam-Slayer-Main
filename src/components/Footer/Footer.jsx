@@ -1,18 +1,24 @@
-import React from 'react';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./style.css"
 const Footer = () => {
   return (
-    <footer>
-      <div className="rounded-social-buttons">
-        <a className="social-button facebook" href="https://www.facebook.com/profile.php?id=100090442474189" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a>
-        {/* <a className="social-button twitter" href="https://www.twitter.com/" target="_blank"><i className="fab fa-twitter"></i></a> */}
-        {/* <a className="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i className="fab fa-linkedin"></i></a> */}
-        {/* <a className="social-button youtube" href="https://www.youtube.com/" target="_blank"><i className="fab fa-youtube"></i></a> */}
-        <a className="social-button instagram" href="https://www.instagram.com/examslayer2023/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+
+    <footer className="footer mt-auto py-3 bg-light">
+      <div className="container text-center">
+        <span className="text-muted">ExamSlayer &copy; 2023</span>
+        <div className="social-media mt-3">
+          <a href="https://www.facebook.com/profile.php?id=100090442474189" target="_blank" rel="noopener noreferrer" className="me-3">
+            <FontAwesomeIcon icon={faFacebook} className="fs-3" />
+          </a>
+          <a href="https://instagram.com/examslayer2023?igshid=YmMyMTA2M2Y" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="fs-3" />
+          </a>
+        </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

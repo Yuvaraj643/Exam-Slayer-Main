@@ -6,16 +6,14 @@ import SubjectPage from "./components/SubjectPage/SubjectPage";
 import ChapterPage from "./components/ChapterPage/ChapterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homapage/HomePage";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  // const [dataFetched, setDataFetched] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      // setDataFetched(true);
       setLoading(false);
     }, 2000);
   }, []);
@@ -31,32 +29,22 @@ const App = () => {
             <Route path="/" element={<Homepage />} />
             <Route
               path="/departments/:departmentId/semesters"
-              element={
-                <SemesterPage
-                  setLoading={setLoading}
-                />
-              }
+              element={<SemesterPage setLoading={setLoading} />}
             />
             <Route
               path="/departments/:departmentId/semesters/:semesterId/subjects"
-              element={
-                <SubjectPage
-                  setLoading={setLoading}
-                />
-              }
+              element={<SubjectPage setLoading={setLoading} />}
             />
             <Route
               path="/departments/:departmentId/semesters/:semesterId/subjects/:subjectId/chapters"
-              element={
-                <ChapterPage
-                  setLoading={setLoading}
-                />
-              }
+              element={<ChapterPage setLoading={setLoading} />}
             />
           </Routes>
         )}
+
       </div>
     </Router>
+    
   );
 };
 

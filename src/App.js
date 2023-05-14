@@ -6,7 +6,6 @@ import SubjectPage from "./components/SubjectPage/SubjectPage";
 import ChapterPage from "./components/ChapterPage/ChapterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homapage/HomePage";
-import Footer from "./components/Footer/Footer";
 import Loader from "./components/Loader/Loader";
 
 const App = () => {

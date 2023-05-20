@@ -79,7 +79,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-      {/* <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div> */}
       <Footer />
     </>
   );

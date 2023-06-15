@@ -48,9 +48,11 @@ const SemesterPage = () => {
                   </div>
                 </Link>
               </div>
+              
             ))}
           </div>
         </div>
+        
       )}
 
     </>

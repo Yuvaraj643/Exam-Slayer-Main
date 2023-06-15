@@ -7,12 +7,14 @@ import "./style.css";
 import Footer from "../Footer/Footer";
 function HomePage() {
   const [departments, setDepartments] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     axios
       .get("https://exam-slayer.onrender.com/departments")
       .then((response) => {
         setDepartments(response.data);
+        setIsLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -59,26 +61,33 @@ function HomePage() {
       </div>
       <section id="container">
         <h2 className="text-center mb-4">Explore All Departments</h2>
-        <div class="row row-cols-1 row-cols-md-1 g-3">
-          <div class="col">
-            {departments.map((department) => (
-              <Link to={`/departments/${department.id}/semesters`}>
-                <div class="card" key={department.id}>
-                  <div class="card-body">
-                    <img
-                      src={department.logo}
-                      class="card-img-top"
-                      alt="logo"
-                    />
-
-                    <h5 class="card-title">{department.name}</h5>
+        {isLoading ? (
+          <div className="text-center">Loading...</div>
+        ) : (
+          <div className="row row-cols-1 row-cols-md-1 g-3">
+            <div className="col">
+              {departments.map((department) => (
+                <Link
+                  to={`/departments/${department.id}/semesters`}
+                  key={department.id}
+                >
+                  <div className="card">
+                    <div className="card-body">
+                      <img
+                        src={department.logo}
+                        className="card-img-top"
+                        alt="logo"
+                      />
+                      <h5 className="card-title">{department.name}</h5>
+                    </div>
                   </div>
-                </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </section>
+
       <Footer />
     </>
   );

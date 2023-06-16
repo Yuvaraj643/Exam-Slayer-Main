@@ -59,41 +59,48 @@ function HomePage() {
           </div>
         </div>
       </div>
+
       <section id="container">
-        <h2 className="text-center mb-4">Explore All Departments</h2>
-        {isLoading ? (
-          <div className="text-center">Loading...</div>
-        ) : (
-          <div className="row row-cols-1 row-cols-md-1 g-3">
-            <div className="col">
-              {departments.map((department) => (
-                <Link
-                  to={`/departments/${department.id}/semesters`}
-                  key={department.id}
-                >
-                  <div className="card">
-                    <div className="card-body">
-                      <img
-                        src={department.logo}
-                        className="card-img-top"
-                        alt="logo"
-                      />
-                      <h5 className="card-title">{department.name}</h5>
-                    </div>
-                  </div>
-                </Link>
-              ))}
-              <div className="card">
-                <div className="card-body">
-                  <Link to="/NLP" className="text-decoration-none">
-                    <h1 className="text-center">NLP Important</h1>
-                  </Link>
-                </div>
-              </div>
+  <h2 className="text-center mb-4">Explore All Departments</h2>
+  {isLoading ? (
+    <div className="text-center">Loading...</div>
+  ) : (
+    <div className="card-deck">
+      <Link to="/NLP" className="text-decoration-none">
+        <div className="card mb-4">
+          <img
+            src={"https://image.lexica.art/full_jpg/f091a46a-2d4c-4338-9fa9-95f3e2e3c06c"}
+            alt="NLP Important"
+            className="card-img-top"
+          />
+          <div className="card-body">
+            <div className="card-title">NLP Important</div>
+          </div>
+        </div>
+      </Link>
+
+      {departments.map((department) => (
+        <Link
+          to={`/departments/${department.id}/semesters`}
+          key={department.id}
+          className="text-decoration-none"
+        >
+          <div className="card mb-4">
+            <img
+              src={department.logo}
+              className="card-img-top"
+              alt="logo"
+            />
+            <div className="card-body">
+              <div className="card-title">{department.name}</div>
             </div>
           </div>
-        )}
-      </section>
+        </Link>
+      ))}
+    </div>
+  )}
+</section>
+
 
       <Footer />
     </>

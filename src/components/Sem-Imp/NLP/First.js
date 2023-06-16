@@ -1,6 +1,7 @@
 import React from "react";
 
 const FirstPage = () => {
+  
   return (
     <>
       <div>
@@ -38,7 +39,6 @@ const FirstPage = () => {
             patterns. For example, the word "elephant" has three syllables:
             "el-e-phant."
           </p>
-
           <h1 class="mt-4 display-4">2.Issues and Challenges</h1>
           <p>
             Natural Language Processing (NLP) encounters several challenges due

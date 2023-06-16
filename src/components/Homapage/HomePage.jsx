@@ -83,6 +83,13 @@ function HomePage() {
                   </div>
                 </Link>
               ))}
+              <div className="card">
+                <div className="card-body">
+                  <Link to="/NLP" className="text-decoration-none">
+                    <h1 className="text-center">NLP Important</h1>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         )}

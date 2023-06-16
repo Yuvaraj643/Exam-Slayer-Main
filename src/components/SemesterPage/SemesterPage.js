@@ -51,6 +51,13 @@ const SemesterPage = () => {
               
             ))}
           </div>
+          <div className="card">
+      <div className="card-body">
+        <Link to="/NLP" className="text-decoration-none">
+          <h1 className="card-title mb-4">NLP Important</h1>
+        </Link>
+      </div>
+    </div>
         </div>
         
       )}

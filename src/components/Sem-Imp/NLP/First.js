@@ -87,7 +87,6 @@ const FirstPage = () => {
             language use. Adapting NLP models to different domains and handling
             domain-specific language characteristics is a significant challenge.
           </p>
-          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
 
           <h1 class="mt-4 display-4">3.Morphological Models</h1>
           <p>
@@ -144,7 +143,6 @@ const FirstPage = () => {
             noun "teacher." Derivation enables the creation of nouns, verbs,
             adjectives, and adverbs from existing words.
           </p>
-          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
 
           <h1 class="mt-4 display-4">
             4.Methods for Finding Structure of Documents
@@ -193,7 +191,7 @@ const FirstPage = () => {
             syntax analysis, information extraction, and machine translation.
           </p>
         </div>
-        <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
+        
 
         <div class="container">
           <h1 class="display-4  mt-4">

@@ -1,7 +1,6 @@
 import React from "react";
 
 const FirstPage = () => {
-  
   return (
     <>
       <div>
@@ -39,6 +38,7 @@ const FirstPage = () => {
             patterns. For example, the word "elephant" has three syllables:
             "el-e-phant."
           </p>
+          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
           <h1 class="mt-4 display-4">2.Issues and Challenges</h1>
           <p>
             Natural Language Processing (NLP) encounters several challenges due
@@ -87,6 +87,7 @@ const FirstPage = () => {
             language use. Adapting NLP models to different domains and handling
             domain-specific language characteristics is a significant challenge.
           </p>
+          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
 
           <h1 class="mt-4 display-4">3.Morphological Models</h1>
           <p>
@@ -143,8 +144,11 @@ const FirstPage = () => {
             noun "teacher." Derivation enables the creation of nouns, verbs,
             adjectives, and adverbs from existing words.
           </p>
+          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
 
-          <h1 class="mt-4 display-4">4.Methods for Finding Structure of Documents</h1>
+          <h1 class="mt-4 display-4">
+            4.Methods for Finding Structure of Documents
+          </h1>
           <p>
             Extracting the structure of documents is crucial for various NLP
             tasks, including information extraction, document classification,
@@ -189,59 +193,116 @@ const FirstPage = () => {
             syntax analysis, information extraction, and machine translation.
           </p>
         </div>
+        <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
+
         <div class="container">
-  <h1 class="display-4  mt-4">5.Complexity & Performances of these Approaches:</h1>
+          <h1 class="display-4  mt-4">
+            5.Complexity & Performances of these Approaches:
+          </h1>
 
-  <div class="mt-4">
-    <h2 class="mb-4">a) Stemming:</h2>
-    <p>
-      Stemming algorithms, such as the Porter stemming algorithm, are computationally efficient and can quickly reduce words to their base forms. However, stemming algorithms are rule-based and may produce incorrect stems in certain cases. The performance of stemming heavily depends on the language and the quality of the stemmer used. While stemming can be beneficial for information retrieval tasks, its simplicity and lack of contextual understanding may limit its accuracy for more complex NLP tasks.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">a) Stemming:</h2>
+            <p>
+              Stemming algorithms, such as the Porter stemming algorithm, are
+              computationally efficient and can quickly reduce words to their
+              base forms. However, stemming algorithms are rule-based and may
+              produce incorrect stems in certain cases. The performance of
+              stemming heavily depends on the language and the quality of the
+              stemmer used. While stemming can be beneficial for information
+              retrieval tasks, its simplicity and lack of contextual
+              understanding may limit its accuracy for more complex NLP tasks.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">b) Lemmatization:</h2>
-    <p>
-      Lemmatization, considering the context and part of speech, provides more accurate results compared to stemming. It involves more linguistic knowledge and may require part-of-speech tagging and morphological analysis, making it computationally more expensive. Lemmatization algorithms, such as the WordNet-based lemmatizer, offer improved performance in tasks that require precise word representations. However, the increased complexity may affect processing speed, particularly when dealing with large volumes of text.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">b) Lemmatization:</h2>
+            <p>
+              Lemmatization, considering the context and part of speech,
+              provides more accurate results compared to stemming. It involves
+              more linguistic knowledge and may require part-of-speech tagging
+              and morphological analysis, making it computationally more
+              expensive. Lemmatization algorithms, such as the WordNet-based
+              lemmatizer, offer improved performance in tasks that require
+              precise word representations. However, the increased complexity
+              may affect processing speed, particularly when dealing with large
+              volumes of text.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">c) Word Formation:</h2>
-    <p>
-      Word formation processes, such as affixation, compounding, and derivation, are complex and require comprehensive morphological analysis. The performance of word formation approaches depends on the specific language and the availability of language-specific resources, such as dictionaries, morphological rules, and language models. In highly inflected languages, the complexity increases due to the large number of possible word forms. Computational efficiency and accuracy vary depending on the implementation and linguistic resources used.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">c) Word Formation:</h2>
+            <p>
+              Word formation processes, such as affixation, compounding, and
+              derivation, are complex and require comprehensive morphological
+              analysis. The performance of word formation approaches depends on
+              the specific language and the availability of language-specific
+              resources, such as dictionaries, morphological rules, and language
+              models. In highly inflected languages, the complexity increases
+              due to the large number of possible word forms. Computational
+              efficiency and accuracy vary depending on the implementation and
+              linguistic resources used.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">d) Tokenization:</h2>
-    <p>
-      Tokenization is generally considered a computationally efficient process, especially when using well-established libraries or tools. The complexity mainly involves defining rules for identifying word boundaries and handling special cases such as contractions, abbreviations, and hyphenated words. Performance can be influenced by language-specific challenges, such as languages without explicit word delimiters or languages with complex compound word structures.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">d) Tokenization:</h2>
+            <p>
+              Tokenization is generally considered a computationally efficient
+              process, especially when using well-established libraries or
+              tools. The complexity mainly involves defining rules for
+              identifying word boundaries and handling special cases such as
+              contractions, abbreviations, and hyphenated words. Performance can
+              be influenced by language-specific challenges, such as languages
+              without explicit word delimiters or languages with complex
+              compound word structures.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">e) Part-of-Speech Tagging:</h2>
-    <p>
-      POS tagging can be computationally demanding, especially when using models that consider contextual information and linguistic features. Traditional rule-based approaches require comprehensive lexicons and grammatical rules, which can be time-consuming to develop and maintain. Machine learning-based approaches, such as Hidden Markov Models (HMMs) or neural network models like recurrent or transformer-based architectures, offer improved performance but require training on large annotated datasets. The complexity and performance trade-off depend on the specific approach used and the size and quality of the training data.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">e) Part-of-Speech Tagging:</h2>
+            <p>
+              POS tagging can be computationally demanding, especially when
+              using models that consider contextual information and linguistic
+              features. Traditional rule-based approaches require comprehensive
+              lexicons and grammatical rules, which can be time-consuming to
+              develop and maintain. Machine learning-based approaches, such as
+              Hidden Markov Models (HMMs) or neural network models like
+              recurrent or transformer-based architectures, offer improved
+              performance but require training on large annotated datasets. The
+              complexity and performance trade-off depend on the specific
+              approach used and the size and quality of the training data.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">f) Named Entity Recognition (NER):</h2>
-    <p>
-      NER can be computationally intensive, especially when using machine learning models, such as Conditional Random Fields (CRFs) or deep learning-based architectures like Recurrent Neural Networks (RNNs) or Transformers. These models require substantial training data and computational resources for training and inference. The complexity of NER also depends on the specific domains and entity types targeted. Handling ambiguous or overlapping entities and generalizing to new or unseen entities can impact performance.
-    </p>
-  </div>
+          <div class="mt-4">
+            <h2 class="mb-4">f) Named Entity Recognition (NER):</h2>
+            <p>
+              NER can be computationally intensive, especially when using
+              machine learning models, such as Conditional Random Fields (CRFs)
+              or deep learning-based architectures like Recurrent Neural
+              Networks (RNNs) or Transformers. These models require substantial
+              training data and computational resources for training and
+              inference. The complexity of NER also depends on the specific
+              domains and entity types targeted. Handling ambiguous or
+              overlapping entities and generalizing to new or unseen entities
+              can impact performance.
+            </p>
+          </div>
 
-  <div class="mt-4">
-    <h2 class="mb-4">g) Dependency Parsing:</h2>
-    <p>
-      Dependency parsing is a complex task, especially for languages with free word order and rich morphological features. Dependency parsers can be rule-based, statistical, or based on deep learning models. Statistical and deep learning approaches require annotated training data and computational resources for training and inference. The complexity and accuracy of dependency parsing depend on the language, the availability of high-quality treebanks, and the specific parsing algorithm used.
-    </p>
-  </div>
-</div>
-
+          <div class="mt-4">
+            <h2 class="mb-4">g) Dependency Parsing:</h2>
+            <p>
+              Dependency parsing is a complex task, especially for languages
+              with free word order and rich morphological features. Dependency
+              parsers can be rule-based, statistical, or based on deep learning
+              models. Statistical and deep learning approaches require annotated
+              training data and computational resources for training and
+              inference. The complexity and accuracy of dependency parsing
+              depend on the language, the availability of high-quality
+              treebanks, and the specific parsing algorithm used.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );

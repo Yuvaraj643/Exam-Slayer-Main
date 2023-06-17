@@ -4,6 +4,7 @@ const Fifth = () => {
   return (
     <>
       <h1>Cohesion</h1>
+      <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
       <p>
         Cohesion refers to the quality of the connections between sentences or
         parts of a text. It is a measure of how well the elements in a text are

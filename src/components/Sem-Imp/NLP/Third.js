@@ -4,6 +4,7 @@ const Third = () => {
   return (
     <>
       <h1>POS Analysis</h1>
+      <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
       <p>
         POS analysis, or Part-of-Speech analysis, is a linguistic process that
         involves identifying and tagging the grammatical category of each word

@@ -1,9 +1,11 @@
 import React from "react";
 
 const FirstPage = () => {
+  
   return (
     <>
       <div>
+        
         <div class="container">
           <h1 class="mt-4 display-4">1.Words and Their Components</h1>
           <p>

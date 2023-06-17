@@ -23,10 +23,12 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar />
+        <div data-mndbanid="f3aaa665-fd2a-442e-8c65-29784b4dcc53"></div>
         {loading ? (
           <Loader /> // Render the loader component while loading is true
         ) : (
           <Routes>
+            
             <Route path="/" element={<Homepage />} />
             <Route
               path="/departments/:departmentId/semesters"

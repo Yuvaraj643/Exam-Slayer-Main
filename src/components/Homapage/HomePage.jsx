@@ -23,6 +23,7 @@ function HomePage() {
 
   return (
     <>
+    
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-md-6 order-md-2">

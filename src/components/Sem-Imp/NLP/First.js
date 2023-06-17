@@ -38,8 +38,9 @@ const FirstPage = () => {
             patterns. For example, the word "elephant" has three syllables:
             "el-e-phant."
           </p>
-          <div id="container-1d1c989847e46d1cd7b18a9cdec67f28"></div>
+          
           <h1 class="mt-4 display-4">2.Issues and Challenges</h1>
+
           <p>
             Natural Language Processing (NLP) encounters several challenges due
             to the complexity and intricacies of human language. Addressing

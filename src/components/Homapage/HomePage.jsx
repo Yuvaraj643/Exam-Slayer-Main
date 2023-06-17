@@ -61,46 +61,48 @@ function HomePage() {
       </div>
 
       <section id="container">
-  <h2 className="text-center mb-4">Explore All Departments</h2>
-  {isLoading ? (
-    <div className="text-center">Loading...</div>
-  ) : (
-    <div className="card-deck">
-      <Link to="/NLP" className="text-decoration-none">
-        <div className="card mb-4">
-          <img
-            src={"https://image.lexica.art/full_jpg/f091a46a-2d4c-4338-9fa9-95f3e2e3c06c"}
-            alt="NLP Important"
-            className="card-img-top"
-          />
-          <div className="card-body">
-            <div className="card-title">NLP Important</div>
-          </div>
-        </div>
-      </Link>
+        
+        <h2 className="text-center mb-4">Explore All Departments</h2>
+        {isLoading ? (
+          <div className="text-center">Loading...</div>
+        ) : (
+          <div className="card-deck">
+            <Link to="/NLP" className="text-decoration-none">
+              <div className="card mb-4">
+                <img
+                  src={
+                    "https://image.lexica.art/full_jpg/f091a46a-2d4c-4338-9fa9-95f3e2e3c06c"
+                  }
+                  alt="NLP Important"
+                  className="card-img-top"
+                />
+                <div className="card-body">
+                  <div className="card-title">NLP Important</div>
+                </div>
+              </div>
+            </Link>
 
-      {departments.map((department) => (
-        <Link
-          to={`/departments/${department.id}/semesters`}
-          key={department.id}
-          className="text-decoration-none"
-        >
-          <div className="card mb-4">
-            <img
-              src={department.logo}
-              className="card-img-top"
-              alt="logo"
-            />
-            <div className="card-body">
-              <div className="card-title">{department.name}</div>
-            </div>
+            {departments.map((department) => (
+              <Link
+                to={`/departments/${department.id}/semesters`}
+                key={department.id}
+                className="text-decoration-none"
+              >
+                <div className="card mb-4">
+                  <img
+                    src={department.logo}
+                    className="card-img-top"
+                    alt="logo"
+                  />
+                  <div className="card-body">
+                    <div className="card-title">{department.name}</div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
-        </Link>
-      ))}
-    </div>
-  )}
-</section>
-
+        )}
+      </section>
 
       <Footer />
     </>

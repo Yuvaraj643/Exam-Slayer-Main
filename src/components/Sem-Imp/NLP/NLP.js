@@ -3,6 +3,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import First from "./First";
 import Second from "./Second";
+import Third from "./Third";
+import Fourth from "./Fourth";
+import Fifth from "./Fifth";
 
 const NLP = () => {
   const [activeSection, setActiveSection] = useState("first");
@@ -25,10 +28,31 @@ const NLP = () => {
             </a>
             <a
               href="#"
-              class="btn btn-primary"
+              class="btn btn-primary me-3"
               onClick={() => showSection("second")}
             >
               Second Unit
+            </a>
+            <a
+              href="#"
+              class="btn btn-primary me-3"
+              onClick={() => showSection("third")}
+            >
+              Third Unit
+            </a>
+            <a
+              href="#"
+              class="btn btn-primary me-3"
+              onClick={() => showSection("fourth")}
+            >
+              Fourth Unit
+            </a>
+            <a
+              href="#"
+              class="btn btn-primary"
+              onClick={() => showSection("fifth")}
+            >
+              Fifth Unit
             </a>
           </div>
         </div>
@@ -45,6 +69,27 @@ const NLP = () => {
           class={`mt-5 ${activeSection !== "second" ? "d-none" : ""}`}
         >
           <Second />
+        </div>
+
+        <div
+          id="third-section"
+          class={`mt-5 ${activeSection !== "third" ? "d-none" : ""}`}
+        >
+          <Third />
+        </div>
+
+        <div
+          id="fourth-section"
+          class={`mt-5 ${activeSection !== "fourth" ? "d-none" : ""}`}
+        >
+          <Fourth />
+        </div>
+
+        <div
+          id="fifth-section"
+          class={`mt-5 ${activeSection !== "fifth" ? "d-none" : ""}`}
+        >
+          <Fifth />
         </div>
       </div>
     </>

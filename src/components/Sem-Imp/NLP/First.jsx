@@ -1,11 +1,9 @@
 import React from "react";
 
 const FirstPage = () => {
-  
   return (
     <>
       <div>
-        
         <div class="container">
           <h1 class="mt-4 display-4">1.Words and Their Components</h1>
           <p>
@@ -40,7 +38,15 @@ const FirstPage = () => {
             patterns. For example, the word "elephant" has three syllables:
             "el-e-phant."
           </p>
-          
+          <div>
+            <ins
+              data-size="300x250"
+              data-adult="0"
+              data-uid="Examslayer2023617153840"
+              data-tnp-spot
+            ></ins>
+            <script async src="https://tnpads.xyz/static/js/banner.js"></script>
+          </div>
           <h1 class="mt-4 display-4">2.Issues and Challenges</h1>
 
           <p>
@@ -194,7 +200,6 @@ const FirstPage = () => {
             syntax analysis, information extraction, and machine translation.
           </p>
         </div>
-        
 
         <div class="container">
           <h1 class="display-4  mt-4">

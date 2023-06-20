@@ -6,8 +6,6 @@ import SubjectPage from "./components/SubjectPage/SubjectPage";
 import ChapterPage from "./components/ChapterPage/ChapterPage";
 import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homapage/HomePage";
-import NLP from "./components/Sem-Imp/NLP/NLP";
-import First from "./components/Sem-Imp/NLP/First";
 import Loader from "./components/Loader/Loader";
 
 const App = () => {
@@ -42,7 +40,6 @@ const App = () => {
               path="/departments/:departmentId/semesters/:semesterId/subjects/:subjectId/chapters"
               element={<ChapterPage setLoading={setLoading} />}
             />
-            <Route path="/NLP" element={<NLP />} />
           </Routes>
         )}
 

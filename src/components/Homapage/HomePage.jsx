@@ -68,20 +68,7 @@ function HomePage() {
           <div className="text-center">Loading...</div>
         ) : (
           <div className="card-deck">
-            <Link to="/NLP" className="text-decoration-none">
-              <div className="card mb-4">
-                <img
-                  src={
-                    "https://image.lexica.art/full_jpg/f091a46a-2d4c-4338-9fa9-95f3e2e3c06c"
-                  }
-                  alt="NLP Important"
-                  className="card-img-top"
-                />
-                <div className="card-body">
-                  <div className="card-title">NLP Important</div>
-                </div>
-              </div>
-            </Link>
+            
 
             {departments.map((department) => (
               <Link
